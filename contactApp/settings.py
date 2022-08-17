@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'contact_list'
+    'contact_list',
+    'django_filters',
+    'phonenumber_field',
+    'rest_framework.authtoken',
+    'user',
 ]
 
 MIDDLEWARE = [
