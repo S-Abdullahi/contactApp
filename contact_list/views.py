@@ -18,11 +18,12 @@ class ContactList(generics.ListCreateAPIView):
     search_fields = ['name','relationship','occupation','address']
     
 
-    
-
 class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
     permission_classes = [permission.IsContactOwner]
+    
+
+
     
 
